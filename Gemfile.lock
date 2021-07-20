@@ -1,5 +1,7 @@
-PATH
-  remote: ../turbo_component
+GIT
+  remote: https://github.com/ceritium/turbo_component.git
+  revision: 9998bb517288ade3685b93c3c26451272b5f4785
+  ref: 9998bb5
   specs:
     turbo_component (0.1.0.pre)
       rails (>= 4.0.0)
@@ -87,8 +89,8 @@ GEM
     crass (1.0.6)
     erubi (1.10.0)
     ffi (1.15.3)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
+    globalid (0.5.1)
+      activesupport (>= 5.0)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
@@ -176,7 +178,7 @@ GEM
     sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.5.12)
+    turbo-rails (0.6.0)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)

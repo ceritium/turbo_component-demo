@@ -30,7 +30,8 @@ gem 'turbo-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-gem 'turbo_component', path: '../turbo_component'
+# gem 'turbo_component', path: '../turbo_component'
+gem 'turbo_component', git: 'https://github.com/ceritium/turbo_component.git', ref: '9998bb5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
