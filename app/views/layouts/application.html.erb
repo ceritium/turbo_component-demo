@@ -11,6 +11,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= turbo_component :sidebar, permanent: true, async: true do %>
+      loading...
+    <% end %>
+    <div id="content">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+  font-size: 10px;
+  display: flex;
+  height: calc( 100vh - 30px);
+  /* calculate the height. Header is 30px */
+}
+
+#sidebar {
+  width: 200px;
+}
+
+#content {
+  flex: 1 0 auto;
+}
+
+#header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(#444444, #333333);
+  color: #bbbbbb;
+}
+
+#headerContent {
+  margin-left: 10px;
+}

@@ -1,0 +1,30 @@
+<h3>
+  <span>
+    <% if session[:show_categories] %>
+      <%= button_to "[-]", turbo_component_sidebar_toggle_categories_path(params.to_unsafe_h), method: :post %>
+    <% else %>
+      <%= button_to "[+]", turbo_component_sidebar_toggle_categories_path(params.to_unsafe_h), method: :post %>
+    <% end %>
+  </span>
+  Categories
+</h3>
+
+<% if session[:show_categories] %>
+  <%= form_with url: turbo_component_sidebar_path, method: :get do |f| %>
+    <%= text_field_tag :name, params[:name] %>
+    <%= f.submit "search" %>
+    <%= link_to "reset", turbo_component_sidebar_path %>
+  <% end %>
+
+  <% if @categories.present? %>
+    <ul>
+      <% @categories.each do |category| %>
+        <li>
+          <%= category.name %>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    No matches
+  <% end %>
+<% end %>
