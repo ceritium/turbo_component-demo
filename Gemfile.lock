@@ -1,11 +1,19 @@
 GIT
   remote: https://github.com/ceritium/turbo_component.git
-  revision: 9998bb517288ade3685b93c3c26451272b5f4785
-  ref: 9998bb5
+  revision: 211f3445f5cb3f896e41385812cefce20a671ba3
+  ref: master
   specs:
     turbo_component (0.1.0.pre)
       rails (>= 4.0.0)
       turbo-rails
+
+GIT
+  remote: https://github.com/hotwired/turbo-rails.git
+  revision: ba86832f7f13001793ab917185788df9723666e8
+  branch: main
+  specs:
+    turbo-rails (0.6.0)
+      rails (>= 6.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -178,8 +186,6 @@ GEM
     sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
-    turbo-rails (0.6.0)
-      rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     web-console (4.1.0)
@@ -219,7 +225,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   sqlite3 (~> 1.4)
-  turbo-rails
+  turbo-rails!
   turbo_component!
   tzinfo-data
   web-console (>= 4.1.0)

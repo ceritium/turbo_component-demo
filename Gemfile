@@ -20,7 +20,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-gem 'turbo-rails'
 # gem 'turbo-rails', git: 'https://github.com/hotwired/turbo-rails.git'
 # gem 'turbo-rails', git: 'https://github.com/ankurp/turbo-rails.git', ref: 'f7b94687496c7fea1f18a6246a13a47c68744499'
 
@@ -30,8 +29,11 @@ gem 'turbo-rails'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# gem 'turbo-rails', require: 'turbo'
+gem 'turbo-rails', git: 'https://github.com/hotwired/turbo-rails.git', branch: 'main'
+# gem "turbo-rails", git: "https://github.com/ceritium/turbo-rails", branch: "broadcasts-targets"
 # gem 'turbo_component', path: '../turbo_component'
-gem 'turbo_component', git: 'https://github.com/ceritium/turbo_component.git', ref: '9998bb5'
+gem 'turbo_component', git: 'https://github.com/ceritium/turbo_component.git', ref: 'master'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
